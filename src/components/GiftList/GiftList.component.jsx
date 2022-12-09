@@ -1,8 +1,8 @@
-import { SpecialTitle, Section } from '../../GlobalStyles';
+import { SpecialTitle, GiftSection } from '../../GlobalStyles';
 
 const GiftList = () => {
   return (
-    <Section className="nes-container with-title">
+    <GiftSection className="nes-container with-title">
       <SpecialTitle>Gifts</SpecialTitle>
       <div className="lists">
         <ul className="nes-list is-circle">
@@ -12,7 +12,7 @@ const GiftList = () => {
           <li>Fall Guys for Nintendo Switch</li>
         </ul>
       </div>
-    </Section>
+    </GiftSection>
   );
 };
 

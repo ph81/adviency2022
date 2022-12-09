@@ -1,7 +1,13 @@
 import GiftList from '../../components/GiftList';
+import GiftInput from '../../components/GiftInput';
 
 const Home = () => {
-  return <GiftList />;
+  return (
+    <>
+      <GiftList />
+      <GiftInput />
+    </>
+  );
 };
 
 export default Home;

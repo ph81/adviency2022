@@ -111,10 +111,23 @@ export const SpecialTitle = styled.h1`
   background-color: #fff;
 `;
 
-export const Section = styled.section`
-  margin: 28rem;
+export const GiftSection = styled.section`
+  margin-top: 28rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const Section = styled.section`
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const Button = styled.button`
+  margin-top: 1rem;
+  background-color: beige;
 `;
