@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import christmasbg from './images/christmas-boxes.jpg';
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -33,7 +34,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  background-color: var(--darkgreen);
+  background-image: url(${christmasbg});
+  background-size:cover;
+  background-repeat:no-repeat;
   color: var(--semiwhite);
 
 }
@@ -109,7 +112,7 @@ export const SpecialTitle = styled.h1`
 `;
 
 export const Section = styled.section`
-  margin: 2rem;
+  margin: 28rem;
   text-align: center;
   display: flex;
   flex-direction: column;
