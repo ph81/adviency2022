@@ -1,3 +1,4 @@
+import Item from '../Item';
 import { SpecialTitle, GiftSection } from '../../GlobalStyles';
 
 const GiftList = () => {
@@ -6,10 +7,9 @@ const GiftList = () => {
       <SpecialTitle>Gifts</SpecialTitle>
       <div className="lists">
         <ul className="nes-list is-circle">
-          <li>Gorra</li>
-          <li>Calcetines</li>
-          <li>Baby Yoda</li>
-          <li>Fall Guys for Nintendo Switch</li>
+          <Item name={'Gorra'} />
+          <Item name={'Fortnite for Nintendo Switch'} />
+          <Item name={'Calcetines'} />
         </ul>
       </div>
     </GiftSection>

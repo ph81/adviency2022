@@ -1,11 +1,11 @@
 import GiftList from '../../components/GiftList';
-import GiftInput from '../../components/GiftInput';
+import GiftForm from '../../components/GiftForm';
 
 const Home = () => {
   return (
     <>
       <GiftList />
-      <GiftInput />
+      <GiftForm />
     </>
   );
 };
