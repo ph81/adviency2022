@@ -7,3 +7,5 @@
 - Day 3: Input form added.
 
 - Day 4: Items + edit button
+
+- Day 5: Items + delete button

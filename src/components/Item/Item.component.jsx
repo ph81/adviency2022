@@ -7,7 +7,8 @@ const Item = ({ name }) => {
         <p>
           {name}{' '}
           <span>
-            <Button alt>🗒️</Button>
+            <Button>🗒️</Button>
+            <Button>❌</Button>
           </span>
         </p>
       </div>
