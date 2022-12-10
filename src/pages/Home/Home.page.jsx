@@ -1,12 +1,13 @@
 import GiftList from '../../components/GiftList';
-import GiftForm from '../../components/GiftForm';
+import NewItem from '../../components/NewItem/NewItem.component';
+import { Container } from '../../GlobalStyles';
 
 const Home = () => {
   return (
-    <>
+    <Container>
       <GiftList />
-      <GiftForm />
-    </>
+      <NewItem />
+    </Container>
   );
 };
 

@@ -9,3 +9,5 @@
 - Day 4: Items + edit button
 
 - Day 5: Items + delete button
+
+- Day 6: basic crud functionality xD
