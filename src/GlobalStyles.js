@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
 :root {
   --darkgreen: rgb(0,100,0);
   --semiwhite: #f7f7f7;
+  --modalbrown: #3f1010;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -130,4 +131,22 @@ export const Section = styled.section`
 export const Button = styled.button`
   margin-top: 1rem;
   background-color: beige;
+`;
+
+export const ModalContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(91, 112, 131, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Modal = styled.div`
+  width: 400px;
+  height: 350px;
+  background-color: var(--modalbrown);
+  border-radius: 5px;
 `;

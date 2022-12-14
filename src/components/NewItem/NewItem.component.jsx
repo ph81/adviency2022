@@ -1,7 +1,8 @@
 import { useState, useContext } from 'react';
 import { GiftContext } from '../../context/GiftContext';
-import { useNavigate, Link } from 'react-router-dom';
-import { Section, Button } from '../../GlobalStyles';
+import { useNavigate } from 'react-router-dom';
+import { Modal, ModalContainer, Button } from '../../GlobalStyles';
+import { CancelButton, GiftForm, GiftActions } from './NewItem.styles';
 
 const NewItem = () => {
   const { gifts, addItem } = useContext(GiftContext);
@@ -17,8 +18,6 @@ const NewItem = () => {
       amount,
     };
     addItem(newGift);
-    setAmount('');
-    setName('');
     navigate('/');
   };
 
@@ -31,31 +30,33 @@ const NewItem = () => {
   };
 
   return (
-    <Section>
-      <div className="nes-field">
-        <label htmlFor="new-gift">Add new gift</label>
-        <input
-          type="text"
-          id="name_field"
-          onChange={handleName}
-          className="nes-input"
-          placeholder="Name of the gift"
-        />
-        <input
-          type="text"
-          id="amount_field"
-          onChange={handleAmount}
-          className="nes-input"
-          placeholder="amount"
-        />
-        <Button type="button" className="nes-btn" onClick={handleOnSubmit}>
-          Add 🎁
-        </Button>
-        <span>
-          <Link to={'/'}>Cancel</Link>
-        </span>
-      </div>
-    </Section>
+    <ModalContainer id="newitem-modal">
+      <Modal>
+        <CancelButton onClick={() => navigate(-1)}>❌</CancelButton>
+        <GiftForm className="nes-field">
+          <h3>Add new gift</h3>
+          <input
+            type="text"
+            id="name_field"
+            onChange={handleName}
+            className="nes-input"
+            placeholder="Name of the gift"
+          />
+          <input
+            type="text"
+            id="amount_field"
+            onChange={handleAmount}
+            className="nes-input"
+            placeholder="amount"
+          />
+          <GiftActions>
+            <Button type="button" className="nes-btn" onClick={handleOnSubmit}>
+              Add 🎁
+            </Button>
+          </GiftActions>
+        </GiftForm>
+      </Modal>
+    </ModalContainer>
   );
 };
 

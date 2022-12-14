@@ -10,4 +10,6 @@
 
 - Day 5: Items + delete button
 
-- Day 6: basic crud functionality xD
+- Day 6 - 9: basic crud functionality xD
+
+- Day 10: display the input form in a modal.
